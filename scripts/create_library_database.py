@@ -8,10 +8,15 @@ import sys
 
 # ---- define the file paths
 package_root = os.path.dirname(os.path.abspath(''))
+library = os.path.join(package_root, 'photo_libraries')
 
+# ---- make sure that photo_libraries exist
+if not os.path.exists(library):
+    raise Exception('You must create a folder labeled photo_libraries. \n'
+                    'Drop all of your photos, and photo folders into this master folder.')
 
 # ---- get the name of the library that I am checking
-path_list = [str(i) for i in Path(os.path.abspath(library)).glob('**/*')]
+path_list = [str(i) for i in Path(library).glob('**/*')]
 file_list = [i for i in path_list if os.path.isfile(i)]
 ext_list = [i[i.rfind('.'):] for i in file_list]
 
@@ -52,4 +57,4 @@ for i in open_idx:
     except:
         pass
 
-df.to_hdf('photo_database.h5', library)
+df.to_hdf('photo_database.h5', 'input')
