@@ -1,5 +1,5 @@
 # Organizing a Photo Library with Python
-I created these scripts for a personal project. A family member had over 200K photos spread across iCloud, Photos, and multiple backups. The number of photos in their Photos library was causing major performance issues on the computer and none of the archived/backed-up photos were easily accessible or searchable.
+I created these scripts for a personal project. A family member had over 200K photos spread across iCloud, Photos, and multiple backups. The number of photos in their Photos library was causing major performance issues on the computer and none of the archived/backed-up photos were easily accessible or searchable. I collected all 200K photos onto a single hard-drive and used these python scripts to organize them into an archive.
 
 
 These scripts:
