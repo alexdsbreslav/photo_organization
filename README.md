@@ -7,7 +7,8 @@ These scripts:
 3. Rename all of the image files with the date they were taken and a unique image id number (to ensure duplicates never get overwritten)
 3. Reorganize the files into a `photo_archive` folder where:
     - Images, movies, photoshop files, and miscellaneous files are pulled out and placed in separate respective directories
-    - Image files are placed in subfolders corresponding to the year they were taken
+    - Image files are placed in subfolders corresponding to the year they were taken  
+
 
 
 Requirements:
