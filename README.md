@@ -11,13 +11,8 @@ These scripts:
 
 
 
-Requirements:
-Python 3:
-  - pandas
-  - numpy
-  - exif
-  - datetime
-  - pathlib
+Requirements:  
+python 3, pandas, numpy, exif, datetime, pathlib
 
 To use these scripts, you must first drop all photos and photo directories into a folder named `photo_libraries`.
 
