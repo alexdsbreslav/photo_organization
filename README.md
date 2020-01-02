@@ -1,5 +1,6 @@
-# photo_organization
+# Organizing a Photo Library with Python
 I created these scripts for a personal project. A family member had over 200K photos spread across iCloud, Photos, and multiple backups. The number of Photos in their library was causing major performance issues on the computer and none of the archived/backed-up photos were easily accessible or searchable.
+
 
 These scripts:
 1. Identify all files and filetypes from an unorganized directory of files
@@ -10,8 +11,7 @@ These scripts:
     - Image files are placed in subfolders corresponding to the year they were taken  
 
 
-
-Requirements:  
+**Requirements:**  
 python 3, pandas, numpy, exif, datetime, pathlib
 
 To use these scripts, you must first drop all photos and photo directories into a folder named `photo_libraries`.
