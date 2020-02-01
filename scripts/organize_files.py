@@ -44,7 +44,7 @@ except FileExistsError:
     pass
 
 # ---- create folders for each unique year:
-if df.datetime.notnull().all():
+if df.datetime.notnull().any():
     for year in df.datetime.dt.year.unique():
         if pd.notnull(year):
             try:
@@ -61,7 +61,7 @@ def create_destinations(df):
     df['img_id'] = ['img_id_'+str(i).zfill(10) for i in rng.randint(0,1e10, len(df))]
     df['file_name'] = [df.filepath.loc[i][df.filepath.loc[i].rfind('/')+1:] for i in df.filepath.index]
 
-    if df.datetime.notnull().all():
+    if df.datetime.notnull().any():
         df['file_name'] = np.where(pd.notnull(df.datetime), 'date_'+df.datetime.dt.strftime('%Y%m%d') + '_' + df.img_id + df.file_ext.str.lower(), df.file_name)
 
     destination = []
